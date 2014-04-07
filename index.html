@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algoritam ocjenjivanja otvorenih podataka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/bootswatch.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="./bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXX-X']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Algoritam ocjenjivanja otvorenih podataka</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#examples">Primjeri</a>
+            </li>
+            <li>
+              <a href="#benefits">Korist</a>
+            </li>
+			<li>
+              <a href="#information">Informacije</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://codeforcroatia.open.hr/" target="_blank">Kodiraj za Hrvatsku</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+	<br><br><br>
+
+    <div class="container">
+
+	  <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-component">
+              <div class="jumbotron">
+                <h1>Algoritam ocjenjivanja otvorenih podataka</h1>
+				<p class="lead">Pet zvjezdica za otvorene podatke</p>
+                <p><a href="http://www.w3.org/People/Berners-Lee/card#i">Tim Berners-Lee</a>, izumitelj weba i inicijator povezanih podataka, predložio je a <a href="http://www.w3.org/DesignIssues/LinkedData.html">shemu implementacije s 5 zvjezdica</a> za otvorene podatke. Ovdje ćemo dati primjer za svaku zvjezdicu i objasniti ćemo troškove i koristi koje dolaze s ovakvim načinom ocjenjivanja.</p>
+                <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+	  
+	        <!-- Examples
+      ================================================== -->
+      <div class="bs-docs-section" id="examples">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1>Primjeri otvorenih podataka</h1>
+			  <p class="lead">Niže su primjeri za svaku razinu ocjene 5 zvjezdica otvorenih podataka. Podaci korišteni u pokaznim primjerima je <em>temperaturna prognoza za Karlovac u sljedeća 3 dana</em>.</p>
+            </div>
+          </div>
+        </div>
+		
+		<!-- 1-star -->
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="bs-component">
+			<h2><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h2>
+            </div>
+          </div>
+		    <div class="col-lg-6">
+				<div class="bs-component">
+					<h3>Jedna zvjezdica</h3>
+					<p>Znači da su podaci dostupni na internetu u bilo kojem obliku pod otvorenom dozvolom.</p>
+				</div>
+
+			</div>
+		  
+		  	<div class="col-lg-4">
+				<div class="bs-component">
+					<p align=center><br><a type="button" class="btn btn-info" href="#addendum1"><i class="fa fa-star"></i> info</a>
+					<a type="button" class="btn btn-primary" href="./data/hr_gtd-1.pdf"><i class="fa fa-star"></i> primjer</a></p>
+				</div>
+
+			</div>
+         
+        </div>
+		
+		<!-- 2-stars -->
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="bs-component">
+				<h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h2>
+            </div>
+          </div>
+		  <div class="col-lg-6">
+            <div class="bs-component">
+				<h3>Dvije zvjezdice</h3>
+				<p>Znači da su dostupni strukturni podaci, kao na primjer Excel datoteka umjesto skenirane tablice.</p>
+		    </div>
+
+          </div>
+		  
+		  <div class="col-lg-4">
+            <div class="bs-component">
+				<p align=center><br><a type="button" class="btn btn-info" href="#addendum2"><i class="fa fa-star"></i><i class="fa fa-star"></i> info </a>
+				<a type="button" class="btn btn-primary" href="./data/hr_gtd-2.xls"><i class="fa fa-star"></i><i class="fa fa-star"></i> primjer</a></p>
+			</div>
+
+          </div>
+         
+        </div>
+		
+		<!-- 3-stars -->
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="bs-component">
+				<h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h2>
+            </div>
+          </div>
+		  <div class="col-lg-6">
+            <div class="bs-component">
+				<h3>Tri zvjezdice</h3>
+				<p>Znači da su dostupni u neutralnom obliku, kao na primjer CSV umjesto Excel datoteke.</p>
+		    </div>
+
+          </div>
+		  
+		  <div class="col-lg-4">
+            <div class="bs-component">
+				<p align=center><br><a type="button" class="btn btn-info" href="#addendum3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> info </a>
+				<a type="button" class="btn btn-primary" href="./data/hr_gtd-3.csv"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> primjer</a></p>
+			</div>
+
+          </div>
+         
+        </div>
+		
+		<!-- 4-stars -->
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="bs-component">
+				<h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></h2>
+            </div>
+          </div>
+		  <div class="col-lg-6">
+            <div class="bs-component">
+				<h3>Četiri zvjezdice</h3>
+				<p>Znači da otvoreni podaci koriste URI za označavanje stvari tako da drugi mogu pristupiti izravno tim podacima.</p>
+		    </div>
+
+          </div>
+		  
+		  <div class="col-lg-4">
+            <div class="bs-component">
+				<p align=center><br><a type="button" class="btn btn-info" href="#addendum4"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> info </a>
+				<a type="button" class="btn btn-primary" href="./data/hr_gtd-4.html"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> primjer</a></p>
+			</div>
+
+          </div>
+         
+        </div>
+		
+		<!-- 5-stars -->
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="bs-component">
+				<h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+            </div>
+          </div>
+		  <div class="col-lg-6">
+            <div class="bs-component">
+				<h3>Pet zvjezdica</h3>
+				<p>Znači da su ovi otvoreni podaci povezani s drugim podacima za pružanje konteksta.</p>
+		    </div>
+
+          </div>
+		  
+		  <div class="col-lg-4">
+            <div class="bs-component">
+				<p align=center><br><a type="button" class="btn btn-info" href="#addendum5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> info </a>
+				<a type="button" class="btn btn-primary" href="./data/hr_gtd-5.html"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> primjer</a></p>
+			</div>
+
+          </div>
+         
+        </div>
+		
+	        <!-- Benefits
+      ================================================== -->
+      <div class="bs-docs-section" id="benefits">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1>Koristi otvorenih podataka</h1>
+            </div>
+          </div>
+        </div>
+		
+		<!-- 1-star -->
+		<div class="row" id="addendum1">
+          <div class="col-lg-12">
+			<h3 class="text-info"><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h3>
+			<h2>Koji su koristi otvorenih podataka s jednom zvjezdicom?</h2>
+            </div>
+          </div>
+		  
+		 <div class="row">
+          <div class="col-lg-8">
+            <div class="bs-component">
+				<h3>Za korisnike podataka</h3>
+				<ul>
+				<li>Možete ih pogledati.</li>
+				<li>Možete ih ispisati.</li>
+				<li>Možete ih spremiti na vaše računalo.</li>
+				<li>Možete unijeti podatke u neki drugi sustav.</li>
+				<li>Možete promijeniti podatke kako želite.</li>
+				<li>Možete podijeliti podatke s kime želite.</li>
+				</ul>
+				<h3>Za nositelje podataka</h3>
+				<ul>
+				<li>Jednostavno ih je objaviti.</li>
+				<li>Ne trebate objašnjavati iznova drugima da mogu koristiti vaše podatke.</li>
+				</ul>
+            </div>
+          </div>
+		  <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="pull-right">
+                <p>Lijepo je imati podatke dostupne na internetu s otvorenom dozvolom (poput <a href="http://www.opendatacommons.org/licenses/pddl/" title="Open Data Commons   &raquo; Public Domain Dedication and License (PDDL)">PDDL</a>, <a href="http://www.opendatacommons.org/licenses/by/" title="Open Data Commons   &raquo; Open Data Commons Attribution License">ODC-by</a> ili <a href="http://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons &mdash;CC0 1.0 Universal">CC0</a>), ipak informacije su zaključane u dokumentu.
+				Teško je izvući podatke iz dokumenta, osim ako napišete vlastitu skriptu za izvlačenje informacija.</p>
+              </blockquote>
+            </div>
+          </div>
+		 </div>
+		 <br>
+		 
+		 <!-- 2-stars -->
+		 <div class="row" id="addendum2">
+          <div class="col-lg-12">
+			<h3 class="text-info"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h3>
+			<h2>Koji su koristi otvorenih podataka s dvije zvjezdice?</h2>
+            </div>
+          </div>
+		  
+		 <div class="row">
+          <div class="col-lg-8">
+            <div class="bs-component">
+				<h3>Za korisnike podataka</h3>
+				<ul>
+				<li><strong>Isto što i s otvorenim podacima s jednom zvjezdicom, i dodatno:</strong></li>
+				<li>Možete ih izravno obraditi u licenciranim aplikacijama za daljnju agregaciju, obavljati izračune, vizualizirati ih, itd.</li>
+				<li>Možete ih izvesti u druge (strukturirane) oblike.</li>
+				</ul>
+				<h3>Za nositelje podataka</h3>
+				<ul>
+				<li>Još uvijek ih je jednostavno objaviti.</li>
+				</ul>
+            </div>
+          </div>
+		  <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="pull-right">
+                <p>Izvrsno! Podaci su dostupni na internetu u strukturiranom obliku (odnosno strojno čitljivom), ipak podaci su i dalje zaključani u dokumentu. Da bismo dobili ove podatke iz dokumenta, ovisimo o licenciranom softveru.</p>
+              </blockquote>
+            </div>
+          </div>
+		 </div>
+		 <br>
+		 
+		 <!-- 3-stars -->
+		 <div class="row" id="addendum3">
+          <div class="col-lg-12">
+			<h3 class="text-info"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></h3>
+			<h2>Koji su koristi otvorenih podataka s tri zvjezdice?</h2>
+            </div>
+          </div>
+		  
+		 <div class="row">
+          <div class="col-lg-8">
+            <div class="bs-component">
+				<h3>Za korisnike podataka</h3>
+				<ul>
+				<li><strong>Isto što i s otvorenim podacima s dvije zvjezdice, i dodatno:</strong></li>
+				<li>Možete manipulirati podacima na način na koji želite i istovremeno niste ograničeni mogućnostima određenog softvera.</li>
+				</ul>
+				<h3>Za nositelje podataka</h3>
+				<ul>
+				<li>Možda ćete trebati pretvarače ili dodatke da izvezete podatke iz zatvorenog oblika.</li>
+				<li>I dalje je jednostavno objaviti otvorene podatke.</li>
+				</ul>
+            </div>
+          </div>
+		  <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="pull-right">
+                <p>Odlično! Podaci nisu samo dostupni na internetu već sada bilo tko može jednostavno koristiti podatke.
+				U drugu ruku, to su podaci na internetu a ne <a href="http://webofdata.wordpress.com/2010/03/01/data-and-the-web-choices/" title="Data and the Web &#8211; a great many of choices  &laquo;  Web of Data">podaci u internetu</a>.</p>
+              </blockquote>
+            </div>
+          </div>
+		 </div>
+		 <br>
+		 
+		 <!-- 4-stars -->
+		 <div class="row" id="addendum4">
+          <div class="col-lg-12">
+			<h3 class="text-info"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></h3>
+			<h2>Koji su koristi otvorenih podataka s četiri zvjezdice?</h2>
+            </div>
+          </div>
+		  
+		 <div class="row">
+          <div class="col-lg-8">
+            <div class="bs-component">
+				<h3>Za korisnike podataka</h3>
+				<ul>
+				<li><strong>Isto što i s otvorenim podacima s tri zvjezdice, i dodatno:</strong></li>
+				<li>Možete pokazivati izravno na njih s nekog drugog internetskog mjesta.</li>
+				<li>Možete spremiti izravnu poveznicu na njih u vaše favorite.</li>
+				<li>Možete ponovno upotrijebiti dijelove podataka.</li>
+				<li>U mogućnosti ste da ponovno upotrijebite alate i dodatke čak i kada razumijete samo dio uzorka koji je nositelj podataka koristio.</li>
+				<li>Razumijevanje strukture RDF grafikona podataka može biti teže nego tabličnih (Excel/CSV) ili razgranatih (XML/JSON) podataka.</li>
+				<li>Možete vrlo jednostavno uparivati podatke s drugim podacima. URI je globalna shema te ukoliko ima isti URI onda je to namjerno, i tada su na dobrom putu da postanu podaci s 5 zvjezdica.</li>
+				</ul>
+				<h3>Za nositelje podataka</h3>
+				<ul>
+				<li>Imate kontrolu nad podacima te im možete optimizirati pristup (balasirati opterećenje, predmemoriranje, itd.).</li>
+				<li>Drugi nositelji podataka sada mogu povezati na vaše podatke, promičući ih na podatke s 5 zvijezdica.</li>
+				<li>Obično ulažete nešto vremena u razdvajanje vaših podataka.</li>
+				<li>Trebati ćete dodijeliti URI stavkama vaših podataka i razmisliti kako prikazati podatke.</li>
+				<li>Trebate naći postojeći uzorak koji ćete ponovno upotrijebiti ili ćete kreirati svoj vlastiti.</li>
+				</ul>
+            </div>
+          </div>
+		  <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="pull-right">
+                <p>Divno! Sada su to podaci u interentu. One (najvažnije) stavke podataka imaju URI i mogu se dijeliti na internetu. Najprirodniji način predstavljanja podataka je korištenjem RDF, ipak i drugi oblici poput Atom mogu biti pretvoreni/mapirani za korištenje ukoliko je to potrebno.</p>
+              </blockquote>
+            </div>
+          </div>
+		 </div>
+		 <br>
+		 
+		 <!-- 5-stars -->
+		 <div class="row" id="addendum5">
+          <div class="col-lg-12">
+			<h3 class="text-info"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+			<h2>Koji su koristi otvorenih podataka s pet zvjezdica?</h2>
+            </div>
+          </div>
+		  
+		 <div class="row">
+          <div class="col-lg-8">
+            <div class="bs-component">
+				<h3>Za korisnike podataka</h3>
+				<ul>
+				<li><strong>Isto što i s otvorenim podacima s četiri zvjezdice, i dodatno:</strong></li>
+				<li>Možete otkriti više (povezanih) podataka prilikom korištenja podatka.</li>
+				<li>Možete saznati o podatkovnoj shemi izravno na mjestu.</li>
+				<li>Sada ćete možda naići na loše interentske poveznice, poput 404 grešaka.</li>
+				<li>Predstavljanje podatka s proizvoljnom vezom je rizično jer omogućuje ljudima uključivanje sadržaja iz bilo koje web stranice na svojim stranicama. Oprez, povjerenje i zdrav razum su još uvijek potrebni.</li>
+				</ul>
+				<h3>Za nositelje podataka</h3>
+				<ul>
+				<li>Vaše podatke možete učiniti laganim za pronaći.</li>
+				<li>Povećavate vrijednost vaših podataka.</li>
+				<li>Vaša organizacija će dobiti iste koristi iz povezivanja kao i korisnik.</li>
+				<li>Trebati ćete uložiti u resurse za povezivanje vaših podataka s drugim podacima na interentu.</li>
+				<li>Trebati ćete popraviti loše ili netočne internetske poveznice.</li>
+				</ul>
+            </div>
+          </div>
+		  <div class="col-lg-4">
+            <div class="bs-component">
+              <blockquote class="pull-right">
+                <p>Briljantno! To su sada podaci <strong>u</strong> internetu <strong>povezani s</strong> drugim podacima. I korisnici i nositelji podataka
+				imaju koristi iz <a href="http://en.wikipedia.org/wiki/Network_effect" title="Network effect - Wikipedia, the free encyclopedia">mrežnog efekta</a>.</p>
+              </blockquote>
+            </div>
+          </div>
+		 </div>
+		
+	   </div>
+		
+	
+		        <!-- Information
+      ================================================== -->
+      <div class="bs-docs-section" id="information">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1>Informacije</h1>
+            </div>
+          </div>
+        </div>
+	
+	    <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-component">
+              <p>Ako imate otvorene podatke, možda biste željeli koristiti <a href="http://lab.linkeddata.deri.ie/2010/lod-badges/">zvjezdice</a> da označite razinu vaših podataka.<br>
+				Internetski podatkovni portal Velike Britanije stranica <a href="http://data.gov.uk">data.gov.uk</a> koristi ovakakv način ocjenjivanja otvorenih setova podataka.<br>
+				Pročitajte data.gov.uk blog za više informacija o <a href="http://data.gov.uk/blog/5-stars-rating-algorithm">algoritmu za ocjene s pet zvjezdica</a>.<br>
+				Christopher Gutteridge ima <a href='http://openorg.ecs.soton.ac.uk/wiki/Linked_Data_Basics_for_Techies'>brzi tečaj povezanih podataka za programere</a>.<br>
+                <a href='http://theodi.org'>Open Data Institute</a> vam pomaže da ceritificirate vaše otvorene podatke s <a href='https://certificates.theodi.org'>certifikatom otvorenih podataka</a>.</p>
+            </div>
+          </div>
+        </div>
+	
+	</div>
+		
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Natrag na vrh</a></li>
+              <li><a href="http://codeforcroatia.open.hr">O nama</a></li>
+              <li><a href="http://twitter.com/codeforcroatia">Twitter</a></li>
+              <li><a href="https://github.com/codeforcroatia">GitHub</a></li>
+            </ul>
+            <p>Stranicu održava ekspertna skupina <a href="http://codeforcroatia.open.hr">Kodiraj za Hrvatski</a>, bazirano na <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a> predlošku <a href="http://bootswatch.com/flatly/" rel="nofollow">Bootswatch Flatly</a> a inspirirana stranicom <a href="http://5stardata.info" rel="nofollow">5stardata.info</a>. Ikone <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web font <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>. Kod je objavljen s dozvolom <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+			<p>Prati nas na Twitteru <a href="http://twitter.com/codeforcroatia">@CodeForCroatia</a></p>
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootswatch.js"></script>
+  </body>
+</html>
